@@ -5,11 +5,8 @@ Paleta de colores
  Ladrillo claro: #  
  Rosa claro: #EBD9D1
  Crema claro: #F7F4EA
-Crema mas clarito: #F7F4EA
 */
 
-/* // <weight>: Use a value from 300 to 700
-// <uniquifier>: Use a unique and descriptive class name */
 
 /* .quicksand-<uniquifier> {
   font-family: "Quicksand", sans-serif;
@@ -43,7 +40,7 @@ body {
 .flex-column-center {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -61,7 +58,6 @@ body {
 
 .container-section {
   width: 100%;
-  background-color: #ffffff;
 }
 .fondo-crema {
   background-color: #F7F4EA;
@@ -103,7 +99,6 @@ h1 {
 }
 
 h3 {
-  align-self: flex-start;
   padding: 10px;
   font-size: 2.2rem;
   color: #B87C4C;
@@ -143,9 +138,6 @@ h3 {
 
 .bannerPaginas-section{
   background-image: linear-gradient(135deg, #a8bba3cc, #b87c4c99);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,12 +156,13 @@ h3 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 20px auto;
+  margin:  0 0 40px 0 ;
 }
 
 .aboutMe-text {
   width: 60%;
   font-size: 1.2rem;
+  margin:  0 0 20px 0 ;
 }
 
 .aboutMe-photo {
@@ -199,23 +192,36 @@ h3 {
   padding-bottom: 80px;
 }
 .service-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  text-align: center; 
   padding: 50px 30px;
   height: 100%;
+  gap: 15px; 
 }
+
 
 .service-card h3 {
   text-align: center;
+  padding: 0;
+  font-size: 2rem;
+  color: #B87C4C;
+}
+
+
+.service-card p {
+  text-align: center;
+  margin: 0;
+}
+
+
+.icon-card {
+  width: 100%;
 }
 
 .icon-card img {
+  margin: 0 auto;
   height: 124px;
   width: 124px;
 }
-
 /* ================== INFO ================== */
 .info-div p {
   font-size: 2rem;
@@ -230,7 +236,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #F7F4EA; /* fondo crema claro */
   border-radius: 12px;
   padding: 30px 20px 40px 20px;
   margin-bottom: 40px;
@@ -265,7 +270,6 @@ h3 {
 }
 
 .michiCard {
-  background-color: #F7F4EA;
   border-radius: 12px;
   border: none;
   overflow: hidden;
@@ -317,10 +321,8 @@ h3 {
   width: 100%;
   border: 3px solid #E8E4E0;
   border-radius: 8px;
-  background-color: #F7F4EA;
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
-  transition: border-color 0.3s ease box-shadow0.3s ease;
   margin-bottom: 8px;
 }
 
@@ -417,7 +419,7 @@ footer ul {
   }
 
   .aboutMe-photo img {
-    height: 100px;
+    height: 150px;
   }
 
   /* Mobile servicios section */
@@ -453,13 +455,12 @@ footer ul {
   margin-bottom: 40px;
   padding: 25px 20px 35px 20px;
   border-radius: 12px;
-  background-color: #F7F4EA;
 }
-
 
   .info-card h3 {
     font-size: 1.8rem;
-    text-align: left;
+    width: 100%;    
+    text-align: center;    /* centra el texto dentro de ese ancho */
   }
 
   .info-card iframe {
