@@ -2,7 +2,7 @@
 /*
 Paleta de colores
  Verde militar: #A8BBA3
- Ladrillo claro: #  
+ Ladrillo claro: #B87C4C  
  Rosa claro: #EBD9D1
  Crema claro: #F7F4EA
 */
@@ -22,20 +22,20 @@ Paleta de colores
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap');
 
-/* ================== RESET ================== */
+/* -------------------- RESET -------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ================== BODY ================== */
+/* -------------------- BODY -------------------- */
 body {
   font-family: "Quicksand", sans-serif;
   background-color: white;
 }
 
-/* ================== CLASES COMPARTIDAS ================== */
+/* -------------------- CLASES COMPARTIDAS -------------------- */
 .flex-column-center {
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@ body {
   background-color: #F7F4EA;
 }
 
-/* ================== HEADER ================== */
+/* -------------------- HEADER -------------------- */
 .logo {
   height: 60px;
   width: auto;
@@ -74,7 +74,7 @@ body {
 }
 
 
-/* ================== TEXTOS GENERALES ================== */
+/* -------------------- TEXTOS GENERALES -------------------- */
 main p,
 main ul {
   font-size: 1.2rem;
@@ -110,7 +110,7 @@ h3 {
   margin: 0;
 }
 
-/* ================== BANNERS ================== */
+/* -------------------- BANNERS -------------------- */
 
 
 .banner-section {
@@ -149,7 +149,7 @@ h3 {
   font-weight: 500;
 }
 
-/* ================== ABOUT ME ================== */
+/* -------------------- ABOUT ME -------------------- */
 .aboutMe-description {
   display: flex;
   flex-direction: row;
@@ -174,7 +174,7 @@ h3 {
   border-radius: 12px;
 }
 
-/* ================== SERVICES ================== */
+/* -------------------- SERVICES -------------------- */
 
 
 .services-grid {
@@ -221,7 +221,7 @@ h3 {
   height: 124px;
   width: 124px;
 }
-/* ================== INFO ================== */
+/* -------------------- INFO -------------------- */
 .info-div p {
   font-size: 2rem;
 }
@@ -254,7 +254,7 @@ h3 {
   align-self: center;
 }
 
-/* ================== CLIENTES ================== */
+/* -------------------- CLIENTES -------------------- */
 .clientes-section {
   display: flex;
   flex-direction: column;
@@ -284,7 +284,7 @@ h3 {
 }
 
 
-/* ================== CONTACTO ================== */
+/* -------------------- CONTACTO -------------------- */
 .form-section{
   width: 100%;
 }
@@ -340,11 +340,11 @@ h3 {
 }
 
 .button-style:hover {
-  background-color: #a46c3f; /* un tono más oscuro o el mismo si querés mantenerlo */
+  background-color: #a46c3f; 
   color: #ffffff;
 }
 
-/* ================== FOOTER ================== */
+/* -------------------- FOOTER -------------------- */
 footer {
   background-color: #A8BBA3;
   text-align: center;
@@ -374,7 +374,7 @@ footer ul {
   padding: 0;
 }
 
-/* ================== MEDIA QUERIES ================== */
+/* -------------------- MEDIA QUERIES -------------------- */
 @media (max-width: 480px) {
 
   header {
@@ -405,7 +405,7 @@ footer ul {
   margin: 15px auto 0 auto;
   font-size: 1.3rem;
   line-height: 1.5;
-  color: #2f2f2f; /* tono legible sobre el fondo */
+  color: #2f2f2f;
   }
 
 
@@ -467,7 +467,7 @@ footer ul {
   .info-card h3 {
     font-size: 1.8rem;
     width: 100%;    
-    text-align: center;    /* centra el texto dentro de ese ancho */
+    text-align: center;   
   }
 
   .info-card iframe {
