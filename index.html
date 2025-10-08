@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>index</title>
+</head>
+<body>
+    <header>
+        <!-- Clase nav-petsitter se usa en el nav -->
+        <nav class="navbar navbar-expand-lg  nav-petsitter">
+            <div class="container-fluid">
+            <!-- Clase logo en la imagen -->
+            <a class="navbar-brand" href="../index.html">
+                <img class="logo" src="./resources/cat.png" alt="Logo de gatos para petsitter">
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/clientes.html">Clientes</a></li>
+                    <li class="nav-item "><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="banner-section bannerHome-section">
+                <h1>SERVICIOS DE CATSITTER</h1>
+        </section>
+       
+        <section id="sobremi" class="container-section">
+            <div class="aboutMe-div flex-column-center">
+                <h2 class="section-title">Sobre mí</h2>
+                <div class="aboutMe-description centered-content">
+                    <div class="aboutMe-text">
+                        <p class="intro-text">¡Hola! Soy Belén Correa y los animales siempre han sido parte de mi vida. Actualmente vivo en Dinamarca.</p>
+                        <p>En Argentina ayudé a grupos de rescate, cuidando animales en tránsito y dándoles todo lo que necesitaban hasta encontrarles una familia.</p>
+                        <p>Tengo 3 años de experiencia como pet sitter, quedándome en casas para que las mascotas se sientan cómodas en su propio espacio. Me encanta jugar con ellas, darles cariño y asegurarme de que estén felices y tranquilas mientras sus humanos no están.</p>
+                        <p>Siempre tuve gatos desde los 8 años y, hoy en día, convivo con mis dos gatos, a quienes amo y cuido con el alma. Ellos son <strong>YMIR</strong> y <strong>OLIVER</strong>.</p>
+                    </div>
+                    <div class="aboutMe-photo"> 
+                        <img class="michis" src="./resources/michifotos/mismichis2.jpg" alt="OLIVER e YMIR">
+                   </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Uso emojis de https://emojipedia.org/ -->
+        <section id="services" class="container-section fondo-crema">
+            <h2 class="section-title">Servicios que ofrezco</h2>
+            <div class="services-div flex-column-center">
+                <div class="services-grid centered-content">
+                    <div class="service-card card-base dayVisit">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/dayVisit.png" alt="Icono de casa"></div>
+                        <h3>Visitas a domicilio</h3>
+                        <p> Juegos, comida, agua fresca y compañia para tu gato en su propio hogar.</p>
+                    </div>
+
+                    <div class="service-card card-base nightStay">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/staynight.png" alt="Icono luna"></div>
+                        <h3>Estadías nocturnas</h3>
+                        <p> Me quedo en tu casa para que tu gato se sienta cómodo y seguro.</p>
+                    </div>
+
+                    <div class="service-card card-base litter">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/littergreen.svg" alt="Icono arenero"></div>
+                        <h3>Limpieza de arenero</h3>
+                        <p>Higiene y confort para tu gato con limpieza regular del arenero.</p>
+                    </div>
+
+                    <div class="service-card card-base homeCare">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/plantgreen.svg" alt="Icono planta"></div>
+                        <h3>Cuidado del hogar</h3>
+                        <p> Supervisión para mantener todo en orden y seguro en tu ausencia.</p>
+                    </div>
+
+                    <div class="service-card card-base playTime">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/cattoy.svg" alt="Icono juguete para gato"></div>
+                        <h3>Juegos e interacción</h3>
+                        <p> Actividad física y estimulación mental para entretener a tu gato.</p>
+                    </div>
+
+                    <div class="service-card card-base foodWater">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/foodwater.svg" alt="Icono plato de comida"></div>
+                        <h3>Alimentación y agua</h3>
+                        <p> Sigo la rutina de tu gato (incluye alimentación natural/raw food).</p>
+                    </div>          
+
+                    <div class="service-card card-base medicine">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/medicine.svg" alt="Icono pastilla"></div>
+                        <h3>Administración de medicación</h3>
+                        <p>Experiencia con pastillas y jarabes para el cuidado de la salud.</p>
+                    </div>
+
+                    <div class="service-card card-base photos">
+                        <div class="icon-card"><img src="./resources/iconos/servicios/camera.png" alt="Icono camara"></div>
+                        <h3>Fotos y actualizaciones</h3>
+                        <p> Para que siempres sepas cómo está tu gato.</p>
+                    </div>                                      
+                </div>
+            </div>
+        </section>      
+
+        <section id="info" class="container-section">
+            <div class="info-div flex-column-center">
+                 <h2 class="section-title">Contenido e información útil</h2>
+                 <p>Aquí te dejo contenido útil para aprender más sobre tus michis:</p>
+                
+                <div class="tips-div centered-content flex-column-center">
+                    <div class="info-card">
+                        <h3>Video recomendado</h3>
+                        <p>
+                        Nai Osepyan es una <strong>conductista felina</strong> que comparte información útil 
+                        sobre el comportamiento y bienestar de los gatos en su 
+                        <a href="https://www.youtube.com/@naiOsepyan" target="_blank">canal de YouTube</a> 
+                        y en su <a href="https://www.instagram.com/nai.osepyan/" target="_blank">Instagram</a>.  
+                        A continuación te dejo una de sus charlas:
+                        </p>
+                        <iframe 
+                        src="https://www.youtube.com/embed/ktRAra9Y_KA?si=ST_a3khtnLWpmzPV"allow="web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Plantas tóxicas para gatos</h3>
+                        <p>
+                        Existen muchas plantas que pueden ser peligrosas para los gatos. Algunas provocan daños a largo plazo,
+                        mientras que otras pueden ser potencialmente mortales al contacto o ingestión.
+                        <a href="https://www.aspca.org/pet-care/animal-poison-control/cats-plant-list" target="_blank">
+                            Consulta la lista de plantas tóxicas para gatos de la ASPCA
+                        </a> para mantener a tu mascota segura en casa y el jardín.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Mi web Petsitter. Todos los derechos reservados.</p>
+
+            <p><a href="mailto:tuemail@example.com">tuemail@example.com</a></p>
+
+            <ul>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
