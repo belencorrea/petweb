@@ -1,0 +1,40 @@
+@use "../generales/variables" as *;
+/* -------------------- INFO/TIPS SECTION -------------------- */
+
+
+
+.info-div{
+    p{
+        font-size: 1.5rem;
+    }
+
+    .tips-div{
+        p{
+            align-self: flex-start;
+            padding: 0 10px 40px;
+        }
+        .info-card{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 12px;
+            padding: 30px 20px 40px 20px;
+            margin-bottom: 40px;
+            p{
+                font-size: 1.2rem;
+            }
+            h3{
+                color: $terciario;
+            }
+            iframe{
+                width: 100%;
+                max-width: 600px;
+                height: 350px;
+                border: none;
+                border-radius: 16px;
+                margin-top: 10px;
+                align-self: center;
+            }
+        }
+    }
+}

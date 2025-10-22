@@ -1,0 +1,106 @@
+@use "../generales/variables" as*;
+/* ---------------------- CONFIGUACIONES GENERALES ------------------- */
+
+// -------------------- IMPORT VARIABLES --------------------
+@import 'variables';
+
+// -------------------- RESET --------------------
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// -------------------- MIXINS --------------------
+
+// Centrado en columna
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+// Tarjeta base 
+@mixin card-base($bg-color: $white) {
+  background-color: $bg-color;
+  border-radius: 12px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+// -------------------- BODY --------------------
+body {
+  font-family: $fontBody;
+  background-color: $white;
+}
+
+// -------------------- CLASES COMPARTIDAS --------------------
+.flex-column-center {
+  @include flex-column-center;
+}
+
+.card-base {
+  @include card-base; // usa fondo blanco
+}
+
+.centered-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-section {
+  width: 100%;
+}
+
+// Fondo crema usando la variable
+.fondo-crema {
+  background-color: $fondo-crema;
+}
+
+
+/* -------------------- TEXTOS GENERALES -------------------- */
+
+// Mixin para títulos (h1, h2, h3)
+@mixin title-style {
+  font-family: $titleFont;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+main {
+  p,
+  ul {
+    font-size: 1.2rem;
+  }
+
+  a {
+    color: $terciario;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+h1,
+h2,
+h3 {
+  @include title-style;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  padding: 10px;
+  font-size: 2.2rem;
+  color: $terciario;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 40px 0;
+  margin: 0;
+}

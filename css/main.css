@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
+/* ---------------------- CONFIGUACIONES GENERALES ------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
+/* -------------------- PALETA DE COLORES -------------------- */
+/* -------------------- FAMILY FONT -------------------- */
+/* -------------------- HEADER -------------------- */
+header .nav-petsitter {
+  background-color: #aabca3;
+}
+header .logo {
+  height: 60px;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* -------------------- PALETA DE COLORES -------------------- */
+/* -------------------- FAMILY FONT -------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #FFFFFF;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-base {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.centered-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container-section {
+  width: 100%;
+}
+
+.fondo-crema {
+  background-color: #F7F4EA;
+}
+
+/* -------------------- TEXTOS GENERALES -------------------- */
+main p,
+main ul {
+  font-size: 1.2rem;
+}
+main a {
+  color: #B87C4C;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  padding: 10px;
+  font-size: 2.2rem;
+  color: #B87C4C;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  padding: 40px 0;
+  margin: 0;
+}
+
+/* -------------------- BANNER -------------------- */
+.banner-section {
+  width: 100%;
+  height: 400px;
+}
+.banner-section h1 {
+  font-size: 4rem;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bannerHome-section {
+  background-image: linear-gradient(135deg, #aabca3, rgba(184, 124, 76, 0.6)), url("../resources/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.bannerPaginas-section {
+  background-image: linear-gradient(135deg, #aabca3, rgba(184, 124, 76, 0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 300px;
+}
+.bannerPaginas-section p {
+  font-weight: 500;
+}
+
+/* -------------------- ABOUT ME SECTION -------------------- */
+.aboutMe-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+.aboutMe-description .aboutMe-text {
+  width: 60%;
+  font-size: 1.2rem;
+  margin: 0 0 20px 0;
+}
+.aboutMe-description .aboutMe-photo {
+  margin-left: 40px;
+}
+.aboutMe-description .aboutMe-photo img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 1s all;
+}
+.aboutMe-description .aboutMe-photo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* -------------------- SERVICES SECTION -------------------- */
+.services-div {
+  padding-bottom: 80px;
+}
+.services-div .services-grid {
+  display: grid;
+  grid-template-areas: "dayVisit nightStay litter" "homeCare playTime foodWater" "medicine photos .";
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.services-div .services-grid .service-card {
+  text-align: center;
+  padding: 50px 30px;
+  height: 100%;
+  gap: 15px;
+  transition: 1s all;
+}
+.services-div .services-grid .service-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.services-div .services-grid .service-card h3 {
+  text-align: center;
+  padding: 0;
+  font-size: 2rem;
+  color: #B87C4C;
+}
+.services-div .services-grid .service-card p {
+  text-align: center;
+  margin: 0;
+}
+.services-div .services-grid .service-card .icon-card {
+  width: 100%;
+}
+.services-div .services-grid .service-card .icon-card img {
+  margin: 0 auto;
+  height: 124px;
+  width: 124px;
+}
+
+/* -------------------- INFO/TIPS SECTION -------------------- */
+.info-div p {
+  font-size: 1.5rem;
+}
+.info-div .tips-div p {
+  align-self: flex-start;
+  padding: 0 10px 40px;
+}
+.info-div .tips-div .info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  padding: 30px 20px 40px 20px;
+  margin-bottom: 40px;
+}
+.info-div .tips-div .info-card p {
+  font-size: 1.2rem;
+}
+.info-div .tips-div .info-card h3 {
+  color: #B87C4C;
+}
+.info-div .tips-div .info-card iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 10px;
+  align-self: center;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: #aabca3;
+  text-align: center;
+  padding: 30px 20px;
+}
+footer p {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer a {
+  color: #B87C4C;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+  padding: 0;
+}
+
+/* -------------------- CONTACTO SECTION -------------------- */
+.form-section {
+  width: 100%;
+}
+.form-section .div-form {
+  width: 600px;
+  padding: 40px;
+  margin: 40px 0;
+}
+.form-section .form ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.form-section .form label {
+  color: #B87C4C;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.form-section .form p {
+  color: #B87C4C;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.form-section .input-style {
+  width: 100%;
+  border: 3px solid #E8E4E0;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.form-section .button-style {
+  background-color: #B87C4C;
+  color: #FFFFFF;
+  border: none;
+  padding: 15px 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.form-section .button-style:hover {
+  background-color: #a46c3f;
+  color: #FFFFFF;
+}
+
+/* -------------------- CLIENTES SECTION-------------------- */
+.clientes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+.clientes-section .michiCard {
+  border-radius: 12px;
+  border: none;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.clientes-section .michis {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header .logo {
+    margin-left: 0;
+  }
+  .banner-section {
+    justify-content: center;
+    padding-right: 0;
+  }
+  .section-title {
+    padding: 40px 0;
+  }
+  .bannerPaginas-section h1 {
+    font-size: 3.5em;
+  }
+  .bannerPaginas-section p {
+    text-align: center;
+    max-width: 85%;
+    margin: 15px auto 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #2f2f2f;
+  }
+  /* Mobile aboutMe section */
+  .aboutMe-description {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+  }
+  .aboutMe-description .aboutMe-text {
+    width: 90%;
+  }
+  .aboutMe-description .aboutMe-photo {
+    margin-left: 0;
+  }
+  .aboutMe-description .aboutMe-photo img {
+    height: 150px;
+  }
+  /* Mobile servicios section */
+  .services-div .services-grid {
+    grid-template-areas: "dayVisit" "nightStay" "litter" "homeCare" "playTime" "foodWater" "medicine" "photos";
+    grid-template-columns: 1fr;
+    width: 80%;
+    gap: 20px;
+  }
+  /* Mobile tips section */
+  .info-div p {
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 0 20px;
+  }
+  .info-div .tips-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .info-div .tips-div .info-card {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 25px 20px 35px 20px;
+    border-radius: 12px;
+  }
+  .info-div .tips-div .info-card h3 {
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+  }
+  .info-div .tips-div .info-card iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  /* Mobile contacto section */
+  .form-section .div-form {
+    width: 90%;
+  }
+}
+@media (min-width: 481px) and (max-width: 780px) {
+  body {
+    background-color: white;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

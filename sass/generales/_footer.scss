@@ -1,0 +1,26 @@
+@use "variables" as*;
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: $secundario;
+  text-align: center;
+  padding: 30px 20px;
+    p{
+        margin: 10px 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    a{
+        color: $terciario;
+        text-decoration: none;
+        font-size: 1.5rem; 
+        font-weight: 400;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 15px 0;
+        padding: 0;
+    }
+}

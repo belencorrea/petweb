@@ -1,0 +1,47 @@
+@use "../generales/variables" as *;
+/* -------------------- SERVICES SECTION -------------------- */
+
+.services-div{
+    padding-bottom: 80px;
+    .services-grid{
+        display: grid;
+        grid-template-areas:
+            "dayVisit nightStay litter"
+            "homeCare playTime foodWater"
+            "medicine photos .";
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    
+        .service-card{
+            text-align: center; 
+            padding: 50px 30px;
+            height: 100%;
+            gap: 15px;
+            transition: 1s all;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);                
+            }
+            h3{
+                text-align: center;
+                padding: 0;
+                font-size: 2rem;
+                color: $terciario;
+            }
+            p{
+            text-align: center;
+            margin: 0;
+            }
+            .icon-card{
+                width: 100%;
+                img{
+                    margin: 0 auto;
+                    height: 124px;
+                    width: 124px;
+                }
+            }
+        }
+    }
+
+}
+

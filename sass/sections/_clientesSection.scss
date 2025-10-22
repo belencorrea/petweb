@@ -1,0 +1,28 @@
+
+/* -------------------- CLIENTES SECTION-------------------- */
+.clientes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+
+  .michiCard {
+        border-radius: 12px;
+        border: none;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .michis {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+}
+
+
+
