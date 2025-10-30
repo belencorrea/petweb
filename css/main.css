@@ -103,7 +103,7 @@ h3 {
 }
 
 .bannerHome-section {
-  background-image: linear-gradient(135deg, #aabca3, rgba(184, 124, 76, 0.6)), url("../resources/banner.png");
+  background-image: linear-gradient(135deg, #aabca3, rgba(184, 124, 76, 0.6)), url("../resources/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left bottom;
