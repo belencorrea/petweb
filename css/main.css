@@ -484,7 +484,9 @@ footer ul {
   }
   /* tablet contacto section */
   .form-section .div-form {
-    width: 80%;
+    width: 450px;
+    padding: 40px;
+    margin: 40px 0;
   }
 }
 
