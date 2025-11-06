@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
 /* ---------------------- CONFIGUACIONES GENERALES ------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap");
@@ -104,38 +103,14 @@ h3 {
 }
 
 .bannerHome-section {
-  position: relative;
-  width: 100%;
-  height: 400px;
+  background-image: linear-gradient(135deg, #aabca3, rgba(184, 124, 76, 0.6)), url("../resources/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 100px;
-  /* Esto es SOLO el degradado */
-}
-.bannerHome-section::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, #aabca3, rgba(184, 124, 76, 0.6));
-  z-index: 1; /* encima de la imagen */
-}
-
-/* La imagen de fondo */
-.bannerHome-section .banner-img {
-  position: absolute;
-  inset: 0; /* ocupa TODO el section */
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left bottom;
-  z-index: 0; /* detrás del degradado */
-}
-
-/* El texto */
-.bannerHome-section h1 {
-  position: relative;
-  z-index: 2; /* arriba del degradado */
 }
 
 .bannerPaginas-section {
