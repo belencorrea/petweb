@@ -12,16 +12,43 @@
     }
 }
 
-.bannerHome-section{
-  background-image: linear-gradient(135deg, $secundario, #b87c4c99), url("../resources/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left bottom;
+.bannerHome-section {
+  position: relative;
+  width: 100%;
+  height: 400px;
+
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 100px;
+
+  /* Esto es SOLO el degradado */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, $secundario, #b87c4c99);
+    z-index: 1; /* encima de la imagen */
+  }
 }
+
+/* La imagen de fondo */
+.bannerHome-section .banner-img {
+  position: absolute;
+  inset: 0;        /* ocupa TODO el section */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left bottom;
+  z-index: 0;      /* detrás del degradado */
+}
+
+/* El texto */
+.bannerHome-section h1 {
+  position: relative;
+  z-index: 2; /* arriba del degradado */
+}
+
 
 .bannerPaginas-section{
     background-image: linear-gradient(135deg, $secundario, #b87c4c99);
