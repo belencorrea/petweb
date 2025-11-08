@@ -41,7 +41,7 @@ body {
 }
 
 .centered-content {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -86,7 +86,7 @@ h3 {
 .section-title {
   text-align: center;
   font-size: 4rem;
-  padding: 40px 10px;
+  padding: 40px 10px 20px;
   margin: 0;
 }
 
@@ -197,6 +197,8 @@ h3 {
 /* -------------------- INFO/TIPS SECTION -------------------- */
 .info-div p {
   font-size: 1.5rem;
+  width: 80%;
+  text-align: center;
 }
 .info-div .tips-div p {
   align-self: flex-start;
@@ -327,7 +329,7 @@ footer ul {
 
 /* -------------------- MEDIA QUERIES -------------------- */
 /* --------------- MOBILE ----------------- */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -369,18 +371,15 @@ footer ul {
   .aboutMe-description .aboutMe-photo img {
     height: 150px;
   }
-  /* Mobile servicios section */
   .services-div .services-grid {
     grid-template-areas: "dayVisit" "nightStay" "litter" "homeCare" "playTime" "foodWater" "medicine" "photos";
     grid-template-columns: 1fr;
     width: 80%;
     gap: 20px;
   }
-  /* Mobile tips section */
   .info-div p {
     font-size: 1.1rem;
     text-align: left;
-    padding: 0 20px;
   }
   .info-div .tips-div {
     display: flex;
@@ -405,12 +404,12 @@ footer ul {
     height: 200px;
     border-radius: 10px;
   }
-  /* Mobile contacto section */
   .form-section .div-form {
     width: 90%;
   }
 }
-@media (min-width: 481px) and (max-width: 1024px) {
+/* --------------- TABLET ----------------- */
+@media (min-width: 601px) and (max-width: 1024px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -433,7 +432,6 @@ footer ul {
     max-width: 85%;
     margin: 15px auto 0 auto;
   }
-  /* tablet aboutMe section */
   .aboutMe-description {
     flex-direction: column;
     width: 90%;
@@ -453,10 +451,6 @@ footer ul {
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     gap: 20px;
-  }
-  /* tablet tips section */
-  .info-div p {
-    text-align: left;
   }
   .info-div .tips-div {
     display: flex;
@@ -481,7 +475,6 @@ footer ul {
     height: 250px;
     border-radius: 10px;
   }
-  /* tablet contacto section */
   .form-section .div-form {
     width: 450px;
     padding: 40px;
