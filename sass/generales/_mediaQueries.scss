@@ -1,8 +1,12 @@
 @use "variables" as *;
 /* -------------------- MEDIA QUERIES -------------------- */
-/* --------------- MOBILE ----------------- */
+/* Uso las medidas de Bootstrap:
+   - Mobile (xs): < 576px
+   - Tablet (sm + md): 576px a 991.98px 
+*/
 
-@media (max-width: 600px) {
+/* --------------- MOBILE ----------------- */
+@media (max-width: 575px) {
 
   header {
     flex-direction: column;
@@ -116,8 +120,7 @@
 }
 
 /* --------------- TABLET ----------------- */
-
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 576px) and (max-width: 991px) {
   header {
     flex-direction: column;
     align-items: center;
